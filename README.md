@@ -1,5 +1,7 @@
 # AI-cup-2024-spring
-Image Data Generation Competition
+[Image Data Generation Competition](https://tbrain.trendmicro.com.tw/Competitions/Details/34)
+
+Follow the [steps](#setup) to reproduce our results.
 
 - Team ID: TEAM_5574
 - Place: 21(Public), 14 (Private)
