@@ -60,3 +60,9 @@ We eventually choose 550_net_G.pth for ROAD model and 550_net_G.pth for RIVER mo
 | Public Testing | Private Testing   |
 | -------------- | ----------------- |
 | 132.952698   | 131.1052 |
+
+## Setup
+To reach our results, you can follow the steps below:
+1. run `dataset/preprocess_dataset.ipynb`
+2. run `train_model.ipynb` (optional, we have provided the pretrained model)
+3. run `test_model.ipynb`
