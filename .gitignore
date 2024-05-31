@@ -5,4 +5,3 @@ pytorch-CycleGAN-and-pix2pix/
 *.png
 *.jpg
 __pycache__/
-dataset/
