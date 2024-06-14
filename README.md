@@ -43,25 +43,33 @@ some low-quality images are:
     ```
 
 ## Model Pipeline
-### ROAD Model
-![ROAD](./src/ROAD.png)
-### RIVER Model
-![RIVER](./src/RIVER.png)
+![alt text](image.png)
 
 ## Hyperparameters
 ### Training
 We train the 2 model with the following hyperparameters:
 - Epochs: 1000 (n_epochs=900, n_epochs_decay=100)
+- netG = unet_256
 - Batch Size: 1
 
 ### Testing
 After training, We get the net_G for each model and use it to generate the drone image from the draft image.
 We eventually choose 550_net_G.pth for ROAD model and 550_net_G.pth for RIVER model.
 
+## Evaluation Metric
+- FID (Fréchet Inception Distance) : 計算真實影像和生成影像之特徵距離，越低表示圖像品質越好。
+![alt text](image-2.png)
+- Final Score : 河流影像與道路影像會個別計算一個 FID 分數，FIDriver, FIDroad 分別加權評分後得到最終分數。
+![alt text](image-3.png)
+
+
+
 ## Results
-| Public Testing | Private Testing   |
-| -------------- | ----------------- |
-| 132.952698   | 131.1052 |
+| Model                                                 | Public Testing | Private Testing   |
+| ----------------------------------------------------- | -------------- | ----------------- |
+| Baseline                                              | 249.76       | 247.94                 |
+| **Enhanced**                                          | **132.95**   | **131.11** |
+
 
 ## Setup
 To reach our results, you can follow the steps below:
