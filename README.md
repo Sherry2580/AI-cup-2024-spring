@@ -43,7 +43,7 @@ some low-quality images are:
     ```
 
 ## Model Pipeline
-![alt text](image.png)
+![alt text](./src/image.png)
 
 ## Hyperparameters
 ### Training
@@ -58,13 +58,14 @@ We eventually choose 550_net_G.pth for ROAD model and 550_net_G.pth for RIVER mo
 
 ## Evaluation Metric
 - FID (Fréchet Inception Distance) : 計算真實影像和生成影像之特徵距離，越低表示圖像品質越好。
-![alt text](image-2.png)
+![alt text](./src/fid.png)
 - Final Score : 河流影像與道路影像會個別計算一個 FID 分數，FIDriver, FIDroad 分別加權評分後得到最終分數。
-![alt text](image-3.png)
+![alt text](./src/final-acore.png)
 
 
 
 ## Results
+Use the **Final score** to evaluate the performance about each models.
 | Model                                                 | Public Testing | Private Testing   |
 | ----------------------------------------------------- | -------------- | ----------------- |
 | Baseline                                              | 249.76       | 247.94                 |
