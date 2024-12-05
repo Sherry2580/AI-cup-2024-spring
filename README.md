@@ -4,7 +4,7 @@
 Follow the [steps](#setup) to reproduce our results.
 
 - Team ID: TEAM_5574
-- Place: 21(Public), 14 (Private)
+- Place: 14 (Private)
 - Member:
     - 藍翊庭, NCKU (Leader)
     - 周韋恩, NCKU
